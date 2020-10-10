@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="index.js"></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <button onclick="openNav()" id="menuButton">≡</button>
+        <div id="navPages">
+            <button onclick="window.location.href = 'index.html'">Home</button>
+            <button onclick="window.location.href = 'aboutus.html'">About Us</button>
+            <button onclick="window.location.href = 'donate.html'">Donate</button>
+        </div>
+
+        <div id="main">
+            
+            <div id="banner">
+
+                <div id="header" class="column">
+                    <h1>Data for Doctors</h1>
+                </div>
+
+                <div id="description" class="column">
+                    <svg height="10" width="400">
+                        <line x1="0" y1="0" x2="400" y2="0" style="stroke:rgb(255, 255, 255); stroke-width: 10" />
+                    </svg>
+                    <p>To assist doctors in their mission of helping, diagnosing, and advising patients.</p>
+                </div>
+
+            </div>
+
+            <div id="triangle-bottomright"></div>
+            <div id="content">
+                <h3>Heart Disease Rate in the United States</h3>
+                <iframe src="mapChoro.html" id="heatmap"></iframe>
+                <p>Heart disease tends to be extremely rare in the midwest, but appears mildly in heavily urbanized states like California and New York. On the contrary, heart disease appears very frequently in the South, with an especially large amount of cases in Texas.</p>
+            </div>
+
+            <br>
+            <br>
+
+            <div id="content">
+                <img src="barchart.png" id="barchart"/>
+                <p>When adjusting for population, heart attacks are still mainly in the southeast, with Texas coming in at second. However, Ohio's low population makes it the state with the most frequent heart attacks per 100,000 people. Highly urbanized areas with high population densities have disappeared entirely from the list.</p>
+            </div>
+
+            <br>
+            <br>
+
+            <div id="content">
+                <h3>Classification of Diabetics</h3>
+                <img src="accuracy.png" id="accuracy"/>
+                <p>By utilizing the K-Nearest Neighbor Algorithms, we can utilize 'Pregnancies','Glucose',' BloodPressure', 'SkinThickness',' Insulin','BMI', 'DiabetesPedigreeFunction', and 'Age' in order to predict whether or not a person has diabetes.</p>
+            </div>
+
+            <br>
+            <br>
+
+            <div id="content">
+                <img src="regression.png" id="regression"/>
+                <p>Although our R^2 Score was not that high (at a modest 30), We were still able to fit the graph relatively well to the actual values. We can still draw conclusions that 'Pregnancies','Glucose','BloodPressure','SkinThickness','Insulin','BMI','DiabetesPedigreeFunction','Age are all significant factors that can cause a change in the outcome: whether a person has diabetes.</p>
+            </div>
+
+            <br>
+            <br>
+
+            <div id="content">
+                <p>Proof of concept: checking for heart disease depending on various factors. (Coming soon)</p>
+                <img src="model1.png" id="model1"/>
+                <img src="model2.png" id="model1"/>
+            </div>
+        </div>
+    </body>
+</html>
